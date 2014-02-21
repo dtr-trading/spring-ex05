@@ -2,12 +2,12 @@ package com.dtr.oas.dto;
 
 import java.io.Serializable;
 
+import javax.validation.constraints.NotNull;
+
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
-
-import javax.validation.constraints.NotNull;
 
 @Component
 @Scope(value="session", proxyMode=ScopedProxyMode.TARGET_CLASS)
@@ -17,12 +17,12 @@ public class StrategyDTO implements Serializable {
 	
 	private Integer id;
 
-	@NotNull
-	@NotEmpty
+	@NotNull(message = "Please provide a strategy type")
+	@NotEmpty(message = "Please provide a strategy type")
 	private String type;
 	
-	@NotNull
-	@NotEmpty
+	@NotNull(message = "Please provide a strategy name")
+	@NotEmpty(message = "Please provide a strategy name")
 	private String name;
 
 	public Integer getId() {

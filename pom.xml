@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.dtr.oas</groupId>
-	<artifactId>spring-ex04</artifactId>
-	<name>spring-ex04</name>
+	<artifactId>spring-ex05</artifactId>
+	<name>spring-ex05</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 
